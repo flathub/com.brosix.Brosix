@@ -46,7 +46,7 @@
                     "type": "archive",
                     "dest": "Brosix",
                     "url": "https://www.brosix.com/downloads/builds/official/Brosix_x64.tar.gz",
-                    "sha256": "6239669cd227770e123e8124cf814c436e931de007f7ae45dd9cece9a30067fe"
+                    "sha256": "7443de2adbdbd85da42af23fba5f5636c01afd15bd7f76d05d06bdbec2133dee"
                 },
 		{
 		    "type": "file",
