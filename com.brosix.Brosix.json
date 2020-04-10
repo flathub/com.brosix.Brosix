@@ -36,7 +36,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -Dm644 com.brosix.Brosix.desktop /app/share/applications/com.brosix.Brosix.desktop",
-                "install -Dm644 com.brosix.Brosix.png /app/share/icons/hicolor/64x64/apps/com.brosix.Brosix.png",
+                "install -Dm644 com.brosix.Brosix.png /app/share/icons/hicolor/128x128/apps/com.brosix.Brosix.png",
                 "install -Dm644 com.brosix.Brosix.metainfo.xml /app/share/metainfo/com.brosix.Brosix.metainfo.xml",
                 "mkdir -p /app/bin;cp -rf Brosix/* /app/bin;ln -s /tmp/Brosix /app/bin/users",
                 "mkdir -p /app/lib;cp -rf Brosix/libs/* /app/lib"
