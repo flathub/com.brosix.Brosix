@@ -1,7 +1,7 @@
 {
     "app-id": "com.brosix.Brosix",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "Brosix.sh",
     "finish-args": [
@@ -9,9 +9,8 @@
         "--share=network",
         "--socket=pulseaudio",
         "--socket=x11",
-        "--socket=wayland",
         "--device=all",
-        "--filesystem=home:rw"
+        "--filesystem=home"
     ],
     "modules": [
 	{
@@ -26,8 +25,25 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.12.8.tar.bz2",
-                    "sha256": "cae7a55a6a1330e7b4297190847793d501b6f3e2248fb9571ab895034ca0aebc"
+                    "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.22.1.tar.bz2",
+                    "sha256": "65c6fbe830a44ca105c443b027182c1b2c9053a91d1e72ad849dfab388b94e31"
+                }
+            ]
+        },
+        {
+            "name": "krb5",
+            "subdir": "src",
+            "config-opts": [
+                    "--localstatedir=/var/lib",
+                    "--sbindir=${FLATPAK_DEST}/bin",
+                    "--disable-rpath",
+                    "--disable-static"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://kerberos.org/dist/krb5/1.20/krb5-1.20.tar.gz",
+                    "sha256": "7e022bdd3c851830173f9faaa006a230a0e0fdad4c953e85bff4bf0da036e12f"
                 }
             ]
         },
@@ -46,7 +62,7 @@
                     "type": "archive",
                     "dest": "Brosix",
                     "url": "https://www.brosix.com/downloads/builds/official/Brosix_x64.tar.gz",
-                    "sha256": "7443de2adbdbd85da42af23fba5f5636c01afd15bd7f76d05d06bdbec2133dee"
+                    "sha256": "2a3fd2fb3f69e23f13d5e7a0dd9cfa2acf117fe06ccce3598b25dbceb622bbb5"
                 },
 		{
 		    "type": "file",
