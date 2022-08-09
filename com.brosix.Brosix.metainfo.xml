@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.brosix.Brosix.desktop</id>
+  <id>com.brosix.Brosix</id>
+  <provides>
+    <id>com.brosix.Brosix.desktop</id>
+  </provides>
+  <launchable type="desktop-id">com.brosix.Brosix.desktop</launchable>
   <name>Brosix</name>
   <project_license>LicenseRef-proprietary</project_license>
   <developer_name>brosix.com</developer_name>
