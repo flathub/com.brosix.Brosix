@@ -13,7 +13,7 @@
         "--filesystem=home"
     ],
     "modules": [
-	{
+    {
             "name": "v4l",
             "config-opts": [ "--disable-static", "--disable-libdvbv5" ],
             "no-make-install": true,
@@ -64,19 +64,19 @@
                     "url": "https://www.brosix.com/downloads/builds/official/Brosix_x64.tar.gz",
                     "sha256": "a7a21c189108bed03d6656a9bed2ef1eda827aa307cc226807affb351f7db9bc"
                 },
-		{
-		    "type": "file",
-		    "path": "com.brosix.Brosix.desktop"
-		},
-		{
-		    "type": "file",
-		    "path": "com.brosix.Brosix.png"
-		},
-		{
+                {
+                    "type": "file",
+                    "path": "com.brosix.Brosix.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "com.brosix.Brosix.png"
+                },
+                {
                     "type": "file",
                     "path": "com.brosix.Brosix.metainfo.xml"
                 },
-		{
+                {
                     "type": "script",
                     "dest": "Brosix",
                     "dest-filename": "Brosix.sh",
@@ -84,7 +84,7 @@
                         "if [ ! -e \"/tmp/Brosix\" ]; then ln -s $XDG_DATA_HOME /tmp/Brosix; fi; exec /app/bin/Brosix"
                     ]
                 }
-	    ]
+            ]
         }
     ]
 }
